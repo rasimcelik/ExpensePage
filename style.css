@@ -1,0 +1,120 @@
+/* - Mobile: 375px - Desktop: 1440px */
+
+/* Typography */ /* Font size: 18px */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+/* Weights: 400, 700 */
+/* font-family: 'Space Mono', monospace; */
+
+:root {
+  /* Colors Primary */
+  --Primary-soft-red: hsl(10, 79%, 65%);
+  --Primary-soft-red-hover: hsl(9, 70%, 77%);
+  --Primary-background: hsl(34, 59%, 91%);
+  --Primary-cyan: hsl(186, 34%, 60%);
+  /* Colors Neutral */
+  --Neutral-dark-brown: hsl(25, 47%, 15%);
+  --Neutral-medium-brown: hsl(28, 10%, 53%);
+  --Neutral-cream: hsl(27, 66%, 92%);
+  --Neutral-veryPale-orange: hsl(33, 100%, 98%);
+}
+* {
+  font-family: "Space Mono", monospace;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#upperContainer {
+  background-color: var(--Primary-soft-red);
+}
+
+#lowerContainer {
+  background-color: var(--Neutral-veryPale-orange);
+}
+
+#my-balance-p {
+  font-size: 14px;
+  color: var(--Neutral-veryPale-orange);
+}
+#my-balance-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--Neutral-veryPale-orange);
+}
+img {
+  width: 60px;
+}
+#spending-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--Neutral-dark-brown);
+}
+
+#bottom-row-spans {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--Neutral-medium-brown);
+  font-size: 14px;
+}
+#bottom-row-price {
+  color: var(--Neutral-dark-brown);
+  font-weight: 700;
+  font-size: 24px;
+}
+#bottom-row-percentage-span {
+  color: var(--Neutral-dark-brown);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.barChart-container {
+  padding: 20px;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+#popup {
+  background-color: var(--Neutral-dark-brown);
+  color: var(--Neutral-veryPale-orange);
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.chart-bar {
+  cursor: pointer;
+  background-color: var(--Primary-soft-red);
+  margin-bottom: 5px;
+  width: 35px;
+  border-radius: 3px;
+}
+.chart-bar:hover {
+  background-color: var(--Primary-soft-red-hover);
+  margin-bottom: 5px;
+  width: 35px;
+  border-radius: 3px;
+}
+.chart-bar.active {
+  background-color: var(--Primary-cyan);
+  margin-bottom: 5px;
+  width: 35px;
+  border-radius: 3px;
+}
+
+.chart-label {
+  font-size: 14px;
+  color: var(--Neutral-medium-brown);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
